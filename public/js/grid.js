@@ -10,8 +10,6 @@ class Grid {
     }
 
     init() {
-        // ЗАМЕТКА: DOM-элементы создаются с помощью метода createElement('название элемента')
-
         // создать таблицу и сохранить ее в свойство
         this.tableGrid = document.createElement('table');
 
@@ -155,7 +153,7 @@ class Grid {
                 }
             }
         }
-
+        
         this.resetBuffer();
     }
 }

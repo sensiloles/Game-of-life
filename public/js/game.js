@@ -27,8 +27,7 @@ class Game {
 
         // сохранить слайдер Speed в свойство и подписаться на событие `input`
         this.speedButton = this.element.querySelector('#speed-slider');
-        this.speedButton.addEventListener('input', this.handleSpeedSliderChange.bind(this));        
-
+        this.speedButton.addEventListener('input', this.handleSpeedSliderChange.bind(this));
     }
 
     play() {
@@ -37,7 +36,6 @@ class Game {
 
         // изменить содержимое кнопки Play на pause (название икноки)
         this.playButton.textContent = 'pause';
-
 
         // высчитать следующее поколение клеток
         this.grid.next();
@@ -92,7 +90,6 @@ class Game {
             this.interval = setInterval(this.play.bind(this), 1000 - this.speed);
         }
     }
-
 
     handleResetButtonClick(event) {
         // обнулить игру
